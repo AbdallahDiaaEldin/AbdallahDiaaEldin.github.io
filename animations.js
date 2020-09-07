@@ -1,63 +1,38 @@
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode")};
+    document.body.style.backgroundColor = sessionStorage.getItem('bg');
+    document.body.style.color = sessionStorage.getItem('cc');
+
+function myFunction() {
+     if ( sessionStorage.getItem('bg') === 'rgb(255, 255, 255)') {
+
+            sessionStorage.setItem('bg', 'rgb(15, 14, 14)');
+            sessionStorage.setItem('cc', 'rgb(175, 175, 175)');
+
+
+     }
+    else if (sessionStorage.getItem('bg') == null || undefined) {
+        sessionStorage.setItem('bg', 'rgb(15, 14, 14)');
+        sessionStorage.setItem('cc', '#777');
+
+    }
+    else if( sessionStorage.getItem('bg') === 'rgb(15, 14, 14)') {
+
+        sessionStorage.setItem('bg', 'rgb(255, 255, 255)');
+        sessionStorage.setItem('cc', '#333');
+
+
+    }
+
+document.body.style.backgroundColor = sessionStorage.getItem('bg');
+document.body.style.color = sessionStorage.getItem('cc');
+
+}
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("myNav").style.width = "100%";
   }
   
   function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("myNav").style.width = "0%";
   }
-     var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-  document.getElementById("defaultOpen").click();
-  function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  document.getElementById("defaultOpen").click();
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-     var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-  document.getElementById("defaultOpen").click();
-  function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  document.getElementById("defaultOpen").click();

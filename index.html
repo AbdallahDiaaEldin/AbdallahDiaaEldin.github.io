@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Java| Simplified</title>
+    <!--Web page name-->
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel = "icon" href = "https://image.flaticon.com/icons/png/512/226/226777.png" type = "image/x-icon"> 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+              <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#" style="font-size: 25px;">Java Syntax</a>
+          <a href="#" style="font-size: 25px;">Java Comments</a>
+          <a href="#" style="font-size: 25px;">Java Variables</a>
+          <a href="#" style="font-size: 25px;">Java Data Types</a>
+          <a href="#" style="font-size: 25px;">Java Operators</a>
+          <a href="#" style="font-size: 25px;">Java Strings</a>
+          <a href="#" style="font-size: 25px;">Java Booleans</a>
+          <a href="#" style="font-size: 25px;">Java While Loop</a>
+          <a href="#" style="font-size: 25px;">Java For Loop</a>
+          <a href="#" style="font-size: 25px;">Java Arrays</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer;font-family: 'Poppins', sans-serif; padding-right: 40px; padding-left: 10px;" onclick="openNav()">&#9776;</span>
+        <img src="https://image.flaticon.com/icons/png/512/226/226777.png" style="width: 90px;">
+        <br>
+        <br>
+        
+      <header>Java, Simplified</header>
+      <br>
+      <br>
+         <button onclick="myFunction()">Toggle dark / light mode</button>
+      <ul id="navlist">
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#prerequisites">Prerequisites</a></li>
+        <li><a class="nav-link" href="#getting-started">Getting Started</a></li>
+        <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+        <li><a class="nav-link" href="#variables">Variables</a></li>
+        <li><a class="nav-link" href="#if-else_statements">if-else Statements</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+
+        <article>
+          <p>
+            This page will be a very loose and informal introduction to the Java
+            programming language. It will serve as a good stepping stone into
+            coding in general. Expect the guide to be informative in nature but
+            not extremely technical.
+          </p>
+
+          <p>
+            The reason I chose Java (over Python or any other language) (for the
+            workshop) is due to the "strictness" of the language. It teaches
+            good habits whilst also being a good first language. However, the
+            workshop is intended to be language agnostic - meaning that the core
+            concepts learnt will be applicable across any language of your
+            choice!
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="prerequisites">
+        <header>Prerequisites</header>
+
+        <article>
+          <p>
+            Getting started is quite simple actually. First, you need to install
+            Java SE from
+            <a
+              href="https://www.oracle.com/java/technologies/javase-jdk14-downloads.html"
+              target="_blank"
+              >here</a
+            >. Then, to write/run code, you just need to install Eclipse for
+            Java Developers (it can be found
+            <a
+              href="https://www.eclipse.org/downloads/packages/release/2020-06/r/eclipse-ide-java-developers"
+              target="_blank"
+              >here</a
+            >). Its a simple software which allows you to write your code and
+            run it, all in one place.
+          </p>
+
+          <p>
+            An extra, supplementary note: running Java code without Eclipse can
+            be a bit hard, since you have to manually run it using multiple
+            commands.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="getting-started">
+        <header>Getting Started (on Eclipse)</header>
+
+        <article>
+            <p>
+                Just like we need to open a notebook to write something, we need to open a 'project' and then create a 'class' on Eclipse to write our code. 
+            </p>
+
+            <p>
+                Thus, we click on 'Create a Java Project', naming it something of our choice. Afterwards, we right click on the project we just made and create a class.
+                When making a class, we have to make sure we checkmark the first box which gives us the "main method".
+            </p>
+        </article>
+    </section>
+
+      <section class="main-section" id="hello_world">
+        <header>Hello World</header>
+
+        <article>
+          <p>
+            Probably the first thing anyone does when learning any language is
+            write a program that says "Hello World!."
+          </p>
+
+          <p>
+            Its actually a good starting point simply because you are actually
+            'creating' something! Almost like a robot saying its first
+            sentence, greeting the world!
+          </p>
+
+          <p>
+            To make Eclipse say "Hello World!" we actually need just 1
+            statement! After creating a project and a class, copy and paste this into the body of the class and run it. Then look
+            at the console!
+          </p>
+
+          <code>System.out.println("Hello World!");</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="variables">
+        <header>Variables</header>
+
+        <article>
+          <p>
+            A program is not as smart as you might think (for better or for
+            worse!). You need to specify what information you are feeding into
+            the program.
+          </p>
+
+          <p>
+            The data you can write in the program is known as 'variables'. Just
+            like in math, we have 'x' and 'y' as variables, we have variables in
+            programming.
+          </p>
+
+          <p>
+            Variables can be any combination of letters and numbers, except a
+            few rules that exist to reduce confusion. Some examples are below:
+          </p>
+          <code>helloWorld <br />abc <br />x <br />y1 </code>
+
+          <p>
+            These variables have types as well! You specify those for the
+            program to understand. A list of variables which you will be using
+            is given below:
+          </p>
+
+          <code>
+            <ul>
+              <li>int - Integers</li>
+              <li>double - Decimal Numbers</li>
+              <li>boolean - true and false</li>
+              <li>
+                String - Combination of letters, words, numbers - practically
+                any written sentence!
+              </li>
+              <li>char - Single letters</li>
+            </ul>
+          </code>
+        </article>
+      </section>
+
+      <section class="main-section" id="if-else_statements">
+        <header>if-else Statements</header>
+
+        <article>
+          <p>
+            It might be a very new concept to you, but it is as simple as it
+            sounds!
+          </p>
+
+          <p>
+            Imagine I told you to do something, but there is a condition to it.
+            What I mean is, what if I told you to carry out this instruction:
+            "If today is Saturday, do not go to school." The computer can also
+            understand this, if you can tell it in a certain way! For example:
+          </p>
+
+          <code>
+            if (today == "Saturday") {
+            <br />
+            <br />goToSchool = false;
+            <br />
+            <br />}
+          </code>
+
+          <p>
+            Now lets add the other case - what if it isn't Saturday? We can write
+            this as: "but if it is not Saturday, do go to school." We just add the
+            code below to the previous one.
+          </p>
+          <code>
+            else {
+            <br />
+            <br />goToSchool = true;
+            <br />
+            <br />}
+          </code>
+        </article>
+      </section>
+    </main>
+    <script src="animations.js"></script>
+  </body>
+</html>
